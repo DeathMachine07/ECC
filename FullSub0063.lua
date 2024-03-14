@@ -53,7 +53,8 @@ if tostring(b) == "Value" then return 999;
 end 
 end 
 return old_index(a, b);
-end  --]]
+end
+		--]]
 
 local plr = game.Players.LocalPlayer
 local char = plr.Character
