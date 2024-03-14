@@ -1,3 +1,12 @@
+bannedid = {
+	77590021
+}
+game.Players.PlayerAdded:Connect(function(plr)
+    if table.find(bannedid,plr.UserId) then
+		plr:Kick("You have been kicked")
+	end
+end)
+
 local DiscordLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt"))()
 local scriptswin = DiscordLib:Window("VOID-X NIGHT WAVES")
 
