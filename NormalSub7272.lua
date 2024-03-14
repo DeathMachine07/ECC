@@ -52,19 +52,6 @@ AdvancedAct:Button("NoClip", function()
 end) 
 
 
-CharacterChain:Button("Super Stamina Regen", function()
-    local plr = game.Players.LocalPlayer
-local char = plr.Character
-
-local function abc()	
-char.Stats.StaminaRegen.Value = 100
-end
-
-char.Stats.StaminaRegen:GetPropertyChangedSignal("Value"):Connect(abc)
-
-end)
-
-
 MiscChain:Button("Chain ESP", function()
 local FillColor = Color3.fromRGB(81, 65, 79)
 local DepthMode = "AlwaysOnTop"
