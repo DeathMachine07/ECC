@@ -43,18 +43,6 @@ AdvancedAct:Button("NoClip", function()
 end) 
 
 CharacterChain:Button("Infinite Stamina", function()
-  --[[  local mt = getrawmetatable(game.Players.LocalPlayer.Character);
-make_writeable(mt); 
-local old_index = mt.__index;
-
-mt.__index = function(a, b) 
-if tostring(a) == "Stamina" then 
-if tostring(b) == "Value" then return 999; 
-end 
-end 
-return old_index(a, b);
-end
-		--]]
 
 local plr = game.Players.LocalPlayer
 local char = plr.Character
