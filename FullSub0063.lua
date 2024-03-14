@@ -89,18 +89,6 @@ char.Stats.StaminaRegen:GetPropertyChangedSignal("Value"):Connect(abc)
 
 end)
 
-CharacterChain:Button("Infinite Dodge", function()
-    local plr = game.Players.LocalPlayer
-local char = plr.Character
-
-local function abc()	
-char.Stats.Dodge.Value = true
-end
-
-char.Stats.Dodge:GetPropertyChangedSignal("Value"):Connect(abc)
-
-end)
-
 
 CharacterChain:Button("Always Dodging", function()
     while true do wait(0.2)
@@ -136,7 +124,7 @@ VoidChain:Button("Warp Chain to PowerStation", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/DeathMachine07/UniqueDemon/main/DemonLordV2"))()
 end)
 
-MiscChain:Button("Points Dupe Restore Power", function()
+MiscChain:Button("Power Repair Dupe Points (Stand Close to E button)", function()
    for i = 1,2000 do
 fireproximityprompt(game.Workspace.GameStuff.GameSections.POWERSTATION.Hitbox.ProximityPrompt)
 end
@@ -216,7 +204,7 @@ MiscChain:Button("Delete Borders", function()
     workspace.Misc.Barriers:ClearAllChildren()
 end)
 
-MiscChain:Button("Interact", function()
+MiscChain:Button("Collect All Scraps", function()
     local Player = game.Players.LocalPlayer
 local Character = Player.Character
 
